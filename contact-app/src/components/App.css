@@ -1,0 +1,32 @@
+.center_div {
+  width: 25%;
+  height: 60vh;
+  background-color: #f4f4f4;
+  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.card-header h4 {
+  margin: 0;
+}
+.btn_div button {
+  min-height: 40px;
+  border-radius: 5%;
+  border-color: transparent;
+  color: white;
+  border: none;
+  margin-top: inherit;
+  outline: none;
+  padding: 15px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+.btn_div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

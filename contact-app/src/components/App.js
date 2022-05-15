@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
+import "./App.css";
 import Header from "./Header";
 import AddContact from "./AddContact";
 import ContactList from "./ContactList";
+import TodoList from "./TodoList";
 
 function App() {
   const LOCAL_STORAGE_KEY = "contacts";
@@ -36,6 +39,7 @@ function App() {
       <Header />
       <AddContact addContactHandler={addContactHandler} />
       <ContactList contact={contacts} getContactid={removeContactHandler} />
+      <TodoList />
     </div>
   );
 }
