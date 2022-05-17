@@ -3,12 +3,15 @@ import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
-import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
 import image1 from '../images/step-01.PNG'
 
 export default function Game(props) {
+    function handleIncrement() {
+        console.log(props.userScore)
+        props.clickUser1(10)
+    }
+
     return (
         <Card sx={{ maxWidth: 345 }}>
             <CardHeader
@@ -32,6 +35,8 @@ export default function Game(props) {
             </CardContent>
             <CardMedia
                 component="img"
+                style={{cursor: "pointer"}}
+                onClick={()=> handleIncrement()}
                 image={image1}
                 width={250} height={450}
                 alt="Paella dish"
